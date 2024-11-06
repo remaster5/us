@@ -22,11 +22,11 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         python -m pip install -r requirements.txt
-    - name: Grant execute permission to S&P500 script
+    - name: Grant execute permission to SP500 script
       run: chmod +x ./calc-sp500-rs.py
     - name: Grant execute permission to NASDAQ script
       run: chmod +x ./calc-nasdaq-rs.py
-    - name: Run S&P500 script
+    - name: Run SP500 script
       run: |
         ./calc-sp500-rs.py
     - name: Run NASDAQ script
