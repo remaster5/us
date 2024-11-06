@@ -11,7 +11,7 @@ import textwrap
 
 
 LIST_FILENAME = "s&p500-list.csv"
-TARGET = 'SP500'
+TARGET = 'S&P500'
 DATA_DIR_ROOT = "DATA"
 
 print("S&P500 리스트를 가져옵니다.")
