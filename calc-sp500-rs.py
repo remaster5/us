@@ -10,15 +10,15 @@ import datetime as dt
 import textwrap
 
 
-LIST_FILENAME = "s&p500-list.csv"
+LIST_FILENAME = "sp500-list.csv"
 TARGET = 'S&P500'
 DATA_DIR_ROOT = "DATA"
 
-print("S&P500 리스트를 가져옵니다.")
-s&p500_list = fdr.StockListing(TARGET)
-s&p500_list.to_csv(LIST_FILENAME)
+print("SP500 리스트를 가져옵니다.")
+sp500_list = fdr.StockListing(TARGET)
+sp500_list.to_csv(LIST_FILENAME)
 
-print(s&p500_list.shape)
+print(sp500_list.shape)
 
 now = dt.datetime.now()
 date = now.strftime("%Y-%m-%d")
@@ -26,7 +26,7 @@ date = now.strftime("%Y-%m-%d")
 data_dir = os.path.join(DATA_DIR_ROOT, date)
 os.makedirs(data_dir, exist_ok=True)
 
-for i in s&p500_list.itertuples():
+for i in sp500_list.itertuples():
     print(f"작업({i.Index}): {i.Code} / {i.Name}")
     filename = f"{i.Code}-{i.Name}.csv"
     file_path = os.path.join(data_dir, filename)
@@ -91,7 +91,7 @@ def calc_score(data, day=-1):
         return -1
 
 
-for i in s&p500_list.itertuples():
+for i in sp500_list.itertuples():
     print(f"작업({i.Index}): {i.Code} / {i.Name}")
     filename = f"{i.Code}-{i.Name}.csv"
     file_path = os.path.join(data_dir, filename)
@@ -146,7 +146,7 @@ rs_df[na_index]['RankChange'] = -1
 sorted = rs_df.sort_values('Rank', ascending=False)
 
 posts_dir = os.path.join("docs", "_posts")
-result_file_path = os.path.join(posts_dir, f"{date}-s&p500-rs.markdown")
+result_file_path = os.path.join(posts_dir, f"{date}-sp500-rs.markdown")
 
 with open(result_file_path, "w") as f:
     header_start = '''\
@@ -154,7 +154,7 @@ with open(result_file_path, "w") as f:
     layout: single
     '''
     f.write(textwrap.dedent(header_start))
-    f.write(now.strftime('title: "S&P500 상대강도 %Y년 %-m월 %-d일"\n'))
+    f.write(now.strftime('title: "SP500 상대강도 %Y년 %-m월 %-d일"\n'))
     f.write(now.strftime("date: %Y-%m-%d %H:%M:%S +0900\n"))
     header_end = '''\
     categories: rs
@@ -163,11 +163,11 @@ with open(result_file_path, "w") as f:
     f.write(textwrap.dedent(header_end))
 
     comment = '''\
-    S&P500 전 종목의 상대강도를 계산했다.
+    SP500 전 종목의 상대강도를 계산했다.
 
     [윌리엄 오닐의 Relative Strength Rating](https://www.williamoneil.com/proprietary-ratings-and-rankings/)에 기반하여 상대 강도를 계산했다.
 
-    ## S&P500 상대강도
+    ## SP500 상대강도
     
     |종목코드|이름|1년 전|종가|상대강도|
     |------|---|-----|--|------|
@@ -186,7 +186,7 @@ with open(result_file_path, "w") as f:
 
 
 result_file_path = os.path.join(
-    posts_dir, f"{date}-s&p500-trend-template.markdown")
+    posts_dir, f"{date}-sp500-trend-template.markdown")
 
 minervini = sorted[sorted.RS >= 70]
 minervini = minervini[minervini.Close2 > minervini.MA50]
@@ -211,7 +211,7 @@ with open(result_file_path, "w") as f:
     layout: single
     '''
     f.write(textwrap.dedent(header_start))
-    f.write(now.strftime('title: "S&P500 미너비니 트렌드 템플릿 %Y년 %-m월 %-d일"\n'))
+    f.write(now.strftime('title: "SP500 미너비니 트렌드 템플릿 %Y년 %-m월 %-d일"\n'))
     f.write(now.strftime("date: %Y-%m-%d %H:%M:%S +0900\n"))
     header_end = '''\
     categories: minervini
