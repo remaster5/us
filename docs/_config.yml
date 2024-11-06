@@ -1,0 +1,38 @@
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+lang: ko-KR
+timezone: Asia/Seoul
+
+title: 미국주식 상대 강도
+repository: remaster5/remaster5.github.io
+plugins:
+  - jekyll-include-cache
+  - jekyll-feed
+ 
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-include-cache
+  - jekyll-feed
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+#analytics:
+  #provider: ""
+  #google:
+    #tracking_id: ""
+    #anonymize_ip: false # default
