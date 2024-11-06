@@ -169,7 +169,7 @@ with open(result_file_path, "w") as f:
 
     ## 나스닥 상대강도
     
-    |종목코드|이름|1년 전|종가|상대강도|
+    |티커|이름|1년 전|종가|상대강도|
     |------|---|-----|--|------|
     '''
     f.write(textwrap.dedent(comment))
@@ -226,7 +226,7 @@ with open(result_file_path, "w") as f:
 
     ## 미너비니 트렌드 템플릿
     
-    |종목코드|이름|종가|RS|신고가,신저가|MA50,150,200|
+    |티커|이름|종가|RS|신고가,신저가|MA50,150,200|
     |------|---|---|--|---------|------------|
     '''
     f.write(textwrap.dedent(comment))
