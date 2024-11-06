@@ -65,7 +65,7 @@ rs_df = pd.DataFrame(columns=[
 
 
 def c(code):
-    link = f"https://finance.daum.net/quotes/A{code}"
+    link = f"https://finance.yahoo.com/quote/{code}/"
     return f"[{code}]({link})"
 
 
