@@ -24,7 +24,7 @@ jobs:
         python -m pip install -r requirements.txt
     - name: Grant execute permission to c script
       run: chmod +x ./calc-c.py
-    - name: Run NYSE script
+    - name: Run c script
       run: |
         ./calc-c.py
 
