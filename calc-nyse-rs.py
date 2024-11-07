@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 
-pip install --upgrade FinanceDataReader
-
 import FinanceDataReader as fdr
 import os
 import os.path
