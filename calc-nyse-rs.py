@@ -12,7 +12,7 @@ import textwrap
 
 
 LIST_FILENAME = "nyse-list.csv"
-TARGET = 'S&P500'
+TARGET = 'NYSE'
 DATA_DIR_ROOT = "DATA"
 
 print("NYSE 리스트를 가져옵니다.")
