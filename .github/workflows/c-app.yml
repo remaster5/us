@@ -1,4 +1,4 @@
-name: Scrap US stock data and calculate RS rating all.
+name: Scrap TEST stock data and calculate RS rating all.
 
 on:
   schedule:
