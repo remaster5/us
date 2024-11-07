@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from alpha_vantage import FinanceDataReader as fdr
+import FinanceDataReader as fdr
 fdr.__version__
 import os
 import os.path
