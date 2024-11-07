@@ -26,12 +26,12 @@ jobs:
       run: chmod +x ./calc-nyse-rs.py
     - name: Grant execute permission to NASDAQ script
       run: chmod +x ./calc-nasdaq-rs.py
-    - name: Run NYSE script
-      run: |
-        ./calc-nyse-rs.py
     - name: Run NASDAQ script
       run: |
         ./calc-nasdaq-rs.py
+    - name: Run NYSE script
+      run: |
+        ./calc-nyse-rs.py
     - name: Commits
       run: |
         git config --local user.email "remaster5@gmail.com"
