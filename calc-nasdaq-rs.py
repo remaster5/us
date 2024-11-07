@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+!pip install -U finance-datareader
+
 import FinanceDataReader as fdr
 import os
 import os.path
