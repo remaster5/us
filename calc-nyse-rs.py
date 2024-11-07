@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import FinanceDataReader as fdr
+fdr.__version__
 import os
 import os.path
 import time
