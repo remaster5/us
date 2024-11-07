@@ -24,9 +24,14 @@ jobs:
         python -m pip install -r requirements.txt
     - name: Grant execute permission to c script
       run: chmod +x ./calc-c.py
+    - name: Grant execute permission to d script
+      run: chmod +x ./calc-d.py
     - name: Run c script
       run: |
         ./calc-c.py
+    - name: Run d script
+      run: |
+        ./calc-d.py
 
     - name: Commits
       run: |
