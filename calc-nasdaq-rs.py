@@ -28,21 +28,22 @@ data_dir = os.path.join(DATA_DIR_ROOT, date)
 os.makedirs(data_dir, exist_ok=True)
 
 for i in nasdaq_list.itertuples():
-    print(f"작업({i.Index}): {i.Symbol.replace('.', '-')} / {i.Name}")
-    filename = f"{i.Symbol.replace('.', '-')}.csv"
+    ssymbol = i.Symbol.replace('.', '-')
+    print(f"작업({i.Index}): {ssymbol} / {i.Name}")
+    filename = f"{ssymbol}.csv"
     file_path = os.path.join(data_dir, filename)
 
     if os.path.exists(file_path):
         print(f"{file_path}가 이미 있습니다.\n가져오지 않습니다.")
     else:
         try:
-            print(f"{i.Symbol.replace('.', '-')}를 가져옵니다.")
-            data = fdr.DataReader(i.Symbol.replace('.', '-'), "2022")
+            print(f"{ssymbol}를 가져옵니다.")
+            data = fdr.DataReader(ssymbol, "2022")
             data.to_csv(file_path)
-            print(f"{i.Symbol.replace('.', '-')}를 가져왔습니다. 잠시 대기합니다.")
+            print(f"{ssymbol}를 가져왔습니다. 잠시 대기합니다.")
             time.sleep(np.random.uniform(0.1, 0.9))
         except Exception as e:
-            print(f"Error fetching or saving data for {i.Symbol.replace('.', '-')}: {e}")
+            print(f"Error fetching or saving data for {ssymbol}: {e}")
             continue
 
 print("모든 항목을 가져왔습니다.")
@@ -97,8 +98,9 @@ def calc_score(data, day=-1):
 
 
 for i in nasdaq_list.itertuples():
-    print(f"작업({i.Index}): {i.Symbol.replace('.', '-')} / {i.Name}")
-    filename = f"{i.Symbol.replace('.', '-')}.csv"
+    ssymbol = i.Symbol.replace('.', '-')
+    print(f"작업({i.Index}): {ssymbol} / {i.Name}")
+    filename = f"{ssymbol}.csv"
     file_path = os.path.join(data_dir, filename)
     data = pd.read_csv(file_path)
     today_score = calc_score(data)
@@ -122,7 +124,7 @@ for i in nasdaq_list.itertuples():
         ma_50 = int(data_50_close.mean())
 
         rs_df = rs_df.append({
-            'Symbol': i.Symbol.replace('.', '-'),
+            'Symbol': ssymbol,
             'Name': i.Name,
             'Score': today_score,
             'YesterdayScore': yesterday_score,
@@ -180,6 +182,7 @@ with open(result_file_path, "w") as f:
     f.write(textwrap.dedent(comment))
 
     for i in sorted.itertuples():
+        ssymbol = i.Symbol.replace('.', '-')
         if i.RankChange == 0:
             change = ""
         elif i.RankChange > 0:
@@ -187,7 +190,7 @@ with open(result_file_path, "w") as f:
         else:
             change = f"({i.RankChange})"
         f.write(
-            f"|{c(i.Symbol.replace('.', '-'))}|{i.Name}|{i.Close1}|{i.Close2}|{i.RS} {change}|\n")
+            f"|{c(ssymbol)}|{i.Name}|{i.Close1}|{i.Close2}|{i.RS} {change}|\n")
 
 
 result_file_path = os.path.join(
@@ -237,8 +240,9 @@ with open(result_file_path, "w") as f:
     f.write(textwrap.dedent(comment))
 
     for i in minervini.itertuples():
+        ssymbol = i.Symbol.replace('.', '-')
         f.write(
-            f"|{c(i.Symbol.replace('.', '-'))}|{i.Name}|{i.Close2}|{i.RS}|{i.Max52W}, {i.Min52W}|{i.MA50}, {i.MA150}, {i.MA200}|\n")
+            f"|{c(ssymbol)}|{i.Name}|{i.Close2}|{i.RS}|{i.Max52W}, {i.Min52W}|{i.MA50}, {i.MA150}, {i.MA200}|\n")
     
     f.write("\n")
     footer = '''\
