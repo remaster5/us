@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "나스닥 미너비니 트렌드 템플릿 2024년 11월 8일"
-date: 2024-11-08 03:45:19 +0900
+date: 2024-11-08 07:37:59 +0900
 categories: minervini
 ---
 마크 미니버니(Mark Minervini)의 트렌드 템플릿(Trend Template)을 계산하여 만족한 결과만 나열하였습니다. 필터링에 걸린 종목은 아래에 나열되어 있지 않습니다.
