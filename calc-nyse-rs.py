@@ -29,7 +29,7 @@ os.makedirs(data_dir, exist_ok=True)
 
 for i in nyse_list.itertuples():
     print(f"작업({i.Index}): {i.Symbol} / {i.Name}")
-    filename = f"{i.Symbol}-{i.Name}.csv"
+    filename = f"{i.Symbol}.csv"
     file_path = os.path.join(data_dir, filename)
 
     if os.path.exists(file_path):
