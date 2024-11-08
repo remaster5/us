@@ -94,7 +94,7 @@ def calc_score(data, day=-1):
 
 for i in nyse_list.itertuples():
     print(f"작업({i.Index}): {i.Symbol} / {i.Name}")
-    filename = f"{i.Symbol}-{i.Name}.csv"
+    filename = f"{i.Symbol}.csv"
     file_path = os.path.join(data_dir, filename)
     data = pd.read_csv(file_path)
     today_score = calc_score(data)
