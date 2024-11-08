@@ -27,11 +27,14 @@ date = now.strftime("%Y-%m-%d")
 data_dir = os.path.join(DATA_DIR_ROOT, date)
 os.makedirs(data_dir, exist_ok=True)
 
+nyse_list.itertuples():
+    filename = "TSM.csv"
+    file_path = os.path.join(data_dir, filename)
 
-        print("TSM를 가져옵니다.")
-        data = fdr.DataReader("TSM", "2022")
-        data.to_csv(file_path)
-        print("TSM 을 가져왔습니다. 잠시 대기합니다.")
-        time.sleep(np.random.uniform(0.1, 0.9))
+print("TSM를 가져옵니다.")
+data = fdr.DataReader("TSM", "2022")
+data.to_csv(file_path)
+print("TSM 을 가져왔습니다. 잠시 대기합니다.")
+time.sleep(np.random.uniform(0.1, 0.9))
 
 print("모든 항목을 가져왔습니다.")
