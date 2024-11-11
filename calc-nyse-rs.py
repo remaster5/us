@@ -9,6 +9,8 @@ import numpy as np
 import pandas as pd
 import datetime as dt
 import textwrap
+import csv
+import yfinance as yf
 
 
 LIST_FILENAME = "nyse-list.csv"
@@ -37,7 +39,8 @@ for i in nyse_list.itertuples():
         print(f"{file_path}가 이미 있습니다.\n가져오지 않습니다.")
     else:
         print(f"{ssymbol}를 가져옵니다.")
-        data = fdr.DataReader(ssymbol, "2022")
+        tticker = yf.Ticker(ssymbol)
+        data = tticker.history(start = "2022-01-01")
         data.to_csv(file_path)
         print(f"{ssymbol}를 가져왔습니다. 잠시 대기합니다.")
         time.sleep(np.random.uniform(0.1, 0.9))
