@@ -127,14 +127,14 @@ for i in nasdaq_list.itertuples():
             'Name': i.Name,
             'Score': today_score,
             'YesterdayScore': yesterday_score,
-            'Close1': four_quarter_ago.Close,
-            'Close2': today.Close,
+            'Close1': round(four_quarter_ago.Close,4),
+            'Close2': round(today.Close,4),
             'MA50': ma_50,
             'MA150': ma_150,
             'MA200': ma_200,
             'LastMonthMA200': last_month_ma_200,
-            'Min52W': min_52w,
-            'Max52W': max_52w,
+            'Min52W': round(min_52w,4),
+            'Max52W': round(max_52w,4),
         }, ignore_index=True)
     print(f"today score: {today_score} / yesterday score: {yesterday_score}")
 
