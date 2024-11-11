@@ -31,7 +31,7 @@ os.makedirs(data_dir, exist_ok=True)
 
 for i in nyse_list.itertuples():
     ssymbol = i.Symbol.replace('.', '-')
-        print(f"작업({i.Index}): {ssymbol} / {i.Name}")
+    print(f"작업({i.Index}): {ssymbol} / {i.Name}")
     filename = f"{ssymbol}.csv"
     file_path = os.path.join(data_dir, filename)
 
