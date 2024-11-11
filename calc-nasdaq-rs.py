@@ -38,16 +38,12 @@ for i in nasdaq_list.itertuples():
     if os.path.exists(file_path):
         print(f"{file_path}가 이미 있습니다.\n가져오지 않습니다.")
     else:
-        try:
-            print(f"{ssymbol}를 가져옵니다.")
-            tticker = yf.Ticker(ssymbol)
+        print(f"{ssymbol}를 가져옵니다.")
+        tticker = yf.Ticker(ssymbol)
         data = tticker.history(start = "2022-01-01")
-            data.to_csv(file_path)
-            print(f"{ssymbol}를 가져왔습니다. 잠시 대기합니다.")
-            time.sleep(np.random.uniform(0.1, 0.9))
-        except Exception as e:
-            print(f"Error fetching or saving data for {ssymbol}: {e}")
-            continue
+        data.to_csv(file_path)
+        print(f"{ssymbol}를 가져왔습니다. 잠시 대기합니다.")
+        time.sleep(np.random.uniform(0.1, 0.9))
 
 print("모든 항목을 가져왔습니다.")
 
