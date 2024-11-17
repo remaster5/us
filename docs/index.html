@@ -2,3 +2,28 @@
 layout: home
 author_profile: true
 ---
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>비공개 웹사이트</title>
+  <script>
+    // 비밀번호 설정
+    var password = "1234"; // 여기에 원하는 비밀번호 입력
+
+    // 페이지가 로드될 때 비밀번호 입력을 요구하는 팝업 띄우기
+    var userPassword = prompt("이 웹사이트에 접근하려면 비밀번호를 입력하세요:");
+
+    // 비밀번호가 맞지 않으면 "접근 거부" 메시지 표시
+    if (userPassword !== password) {
+      document.body.innerHTML = "<h1>접근 거부</h1><p>올바른 비밀번호를 입력하세요.</p>"; // 비밀번호 틀리면 접근을 거부
+    }
+  </script>
+</head>
+<body>
+  <h1></h1>
+  <p></p>
+</body>
+</html>
