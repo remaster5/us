@@ -2686,19 +2686,19 @@
 2684,HL PR B,Hecla Mining Cumulative Conv Pref Series B,51201010,금 제외 귀금속 및 광물
 2685,RC PR C,Ready Capital 6 25 Cumul Convertible Prf Shs Series C,60102040,특수 REITs
 2686,BFS PR D,Saul Ctrs 1 100 Cum DS Representing Pref Shs Series D,60102020,상업용 REITs
-2687,AEFC,Aegon Funding Company 5 10 Subordinated Notes due 2049,55301030,생명 및 건강 보험
-2688,AFGC,American Financial Group 5 125 Subordinated Debentures due 2059,55301020,손해보험
-2689,AFGB,American Financial Group 5 875 Subordinated Debentures Exp 2059,55301020,손해보험
-2690,AFGD,American Financial Group 5 625 Subordinated Debenture,55301020,손해보험
+2687,AFGB,American Financial Group 5 875 Subordinated Debentures Exp 2059,55301020,손해보험
+2688,AFGD,American Financial Group 5 625 Subordinated Debenture,55301020,손해보험
+2689,AEFC,Aegon Funding Company 5 10 Subordinated Notes due 2049,55301030,생명 및 건강 보험
+2690,AFGC,American Financial Group 5 125 Subordinated Debentures due 2059,55301020,손해보험
 2691,BC PR A,Brunswick Corporation 6 500 Senior Notes Due 15 Oct 2048,53205020,오락용 제품
 2692,BC PR B,Brunswick 6 625 Senior Notes due 2049,53205020,오락용 제품
-2693,CELG RT,Bristol Myers Squibb Company Contingent Rights Exp 31 Dec 2030,56201040,제약
-2694,CCZ,Comcast Holdings ZONES 2 Exchangeable Subor Debentures Exp 15 Nov 2029,53302020,방송
+2693,CCZ,Comcast Holdings ZONES 2 Exchangeable Subor Debentures Exp 15 Nov 2029,53302020,방송
+2694,CELG RT,Bristol Myers Squibb Company Contingent Rights Exp 31 Dec 2030,56201040,제약
 2695,DUKB,Duke Energy Corporation 5.625% Junior Subordinated Debentures Exp 15 Sep 2078,59101010,전력 유틸리티
-2696,ELC,Entergy Louisiana Collateral Mortgage Bonds 4.875 Series Exp 01 Sept 2066,59101010,전력 유틸리티
-2697,EAI,Entergy Arkansas First Mortgage Bonds 4.875 Series Exp 01 Sept 2066,59101010,전력 유틸리티
+2696,EAI,Entergy Arkansas First Mortgage Bonds 4.875 Series Exp 01 Sept 2066,59101010,전력 유틸리티
+2697,DTW,Dte Energy Company 5 25 Junior Subordinated Debentures due 2077 Series E,59101010,전력 유틸리티
 2698,ENJ,Entergy Orleans 5% Mortgage Bonds Series Exp 01 Dec 2052,59101010,전력 유틸리티
-2699,EMP,Entergy Mississippi 4.90 First Mortgage Bonds Exp 1 Oct 2066,59101010,전력 유틸리티
+2699,ELC,Entergy Louisiana Collateral Mortgage Bonds 4.875 Series Exp 01 Sept 2066,59101010,전력 유틸리티
 2700,DTW,Dte Energy Company 5 25 Junior Subordinated Debentures due 2077 Series E,59101010,전력 유틸리티
 2701,GJS,Strats Sm Trust For Goldman Sachs Group Securities Certificates Series 2006-2,55101050,기업 금융 서비스
 2702,GJO,STRATS SM Wal-Mart 4.65 Floating Rate STRATS Certificates Series 2005-4,55101050,기업 금융 서비스
