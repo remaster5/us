@@ -2682,43 +2682,43 @@
 2680,HL PR B,Hecla Mining Cumulative Conv Pref Series B,51201010,금 제외 귀금속 및 광물
 2681,RC PR C,Ready Capital 6 25 Cumul Convertible Prf Shs Series C,60102040,특수 REITs
 2682,BFS PR D,Saul Ctrs 1 100 Cum DS Representing Pref Shs Series D,60102020,상업용 REITs
-2683,AFGB,American Financial Group 5 875 Subordinated Debentures Exp 2059,55301020,손해보험
-2684,AFGD,American Financial Group 5 625 Subordinated Debenture,55301020,손해보험
-2685,AEFC,Aegon Funding Company 5 10 Subordinated Notes due 2049,55301030,생명 및 건강 보험
-2686,AFGC,American Financial Group 5 125 Subordinated Debentures due 2059,55301020,손해보험
+2683,AEFC,Aegon Funding Company 5 10 Subordinated Notes due 2049,55301030,생명 및 건강 보험
+2684,AFGC,American Financial Group 5 125 Subordinated Debentures due 2059,55301020,손해보험
+2685,AFGB,American Financial Group 5 875 Subordinated Debentures Exp 2059,55301020,손해보험
+2686,AFGD,American Financial Group 5 625 Subordinated Debenture,55301020,손해보험
 2687,BC PR A,Brunswick Corporation 6 500 Senior Notes Due 15 Oct 2048,53205020,오락용 제품
 2688,BC PR B,Brunswick 6 625 Senior Notes due 2049,53205020,오락용 제품
-2689,CCZ,Comcast Holdings ZONES 2 Exchangeable Subor Debentures Exp 15 Nov 2029,53302020,방송
-2690,CELG RT,Bristol Myers Squibb Company Contingent Rights Exp 31 Dec 2030,56201040,제약
+2689,CELG RT,Bristol Myers Squibb Company Contingent Rights Exp 31 Dec 2030,56201040,제약
+2690,CCZ,Comcast Holdings ZONES 2 Exchangeable Subor Debentures Exp 15 Nov 2029,53302020,방송
 2691,DUKB,Duke Energy Corporation 5.625% Junior Subordinated Debentures Exp 15 Sep 2078,59101010,전력 유틸리티
-2692,EAI,Entergy Arkansas First Mortgage Bonds 4.875 Series Exp 01 Sept 2066,59101010,전력 유틸리티
-2693,DTW,Dte Energy Company 5 25 Junior Subordinated Debentures due 2077 Series E,59101010,전력 유틸리티
+2692,ELC,Entergy Louisiana Collateral Mortgage Bonds 4.875 Series Exp 01 Sept 2066,59101010,전력 유틸리티
+2693,EAI,Entergy Arkansas First Mortgage Bonds 4.875 Series Exp 01 Sept 2066,59101010,전력 유틸리티
 2694,ENJ,Entergy Orleans 5% Mortgage Bonds Series Exp 01 Dec 2052,59101010,전력 유틸리티
-2695,ELC,Entergy Louisiana Collateral Mortgage Bonds 4.875 Series Exp 01 Sept 2066,59101010,전력 유틸리티
-2696,EMP,Entergy Mississippi 4.90 First Mortgage Bonds Exp 1 Oct 2066,59101010,전력 유틸리티
-2697,GJT,STRATS SM Trust for Allstate Securities Certificates Series 2006-3,55101050,기업 금융 서비스
-2698,GJR,STRATS SM Floating Rate Structured Repackaged Asset Backed Gamble Securities,55101050,기업 금융 서비스
-2699,GJS,Strats Sm Trust For Goldman Sachs Group Securities Certificates Series 2006-2,55101050,기업 금융 서비스
-2700,GJO,STRATS SM Wal-Mart 4.65 Floating Rate STRATS Certificates Series 2005-4,55101050,기업 금융 서비스
+2695,EMP,Entergy Mississippi 4.90 First Mortgage Bonds Exp 1 Oct 2066,59101010,전력 유틸리티
+2696,DTW,Dte Energy Company 5 25 Junior Subordinated Debentures due 2077 Series E,59101010,전력 유틸리티
+2697,GJS,Strats Sm Trust For Goldman Sachs Group Securities Certificates Series 2006-2,55101050,기업 금융 서비스
+2698,GJO,STRATS SM Wal-Mart 4.65 Floating Rate STRATS Certificates Series 2005-4,55101050,기업 금융 서비스
+2699,GJT,STRATS SM Trust for Allstate Securities Certificates Series 2006-3,55101050,기업 금융 서비스
+2700,GJR,STRATS SM Floating Rate Structured Repackaged Asset Backed Gamble Securities,55101050,기업 금융 서비스
 2701,IPB,Merrill Lynch Depositor Certificates Series 2003 1 Exp 15 May 2033,55101050,기업 금융 서비스
 2702,NYCB PR U,New York Community Capital BONUSES PRF,55102020,투자 관리 및 펀드 운영
 2703,QVCD,QVC 6.375% Senior Secured Notes Exp 13 Sep 2067,57201030,온라인 서비스
-2704,QVCC,QVC 6.250 Senior Secured Notes due 2068,57201030,온라인 서비스
-2705,RCB,Ready Capital 6 20 Senior Notes due 2026,60102040,특수 REITs
-2706,RZB,Reinsurance Group of America 5.75 Fixed To Floating Rate Subordinated,55301050,재보험
-2707,SBBA,Scorpio Tankers 7.00% Senior Notes Due 2025,50103030,오일 및 가스 수송 서비스
+2704,RCB,Ready Capital 6 20 Senior Notes due 2026,60102040,특수 REITs
+2705,QVCC,QVC 6.250 Senior Secured Notes due 2068,57201030,온라인 서비스
+2706,SBBA,Scorpio Tankers 7.00% Senior Notes Due 2025,50103030,오일 및 가스 수송 서비스
+2707,RZB,Reinsurance Group of America 5.75 Fixed To Floating Rate Subordinated,55301050,재보험
 2708,SFB,Stifel Financial 5 20 Senior Notes Exp 15th Oct 2047,55102010,투자 은행 및 중개 서비스
 2709,WRB PR E,WR Berkley 5.70 Subordinated Debentures Due 2058,55301020,손해보험
 2710,WRB PR F,W R Berkley 5.10% Subordinated Debentures Exp 2059,55301020,손해보험
 2711,UZD,United States Cellular 6 250 Senior Notes due 2069,57401020,무선 통신 서비스
-2712,DTB,DTE Energy 4 375 Junior Subordinated Debentures Series G due 2080,59101010,전력 유틸리티
-2713,AFGE,American Financial Group 4 500 Subordinated Debentures due 2060,55301020,손해보험
+2712,AFGE,American Financial Group 4 500 Subordinated Debentures due 2060,55301020,손해보험
+2713,DTB,DTE Energy 4 375 Junior Subordinated Debentures Series G due 2080,59101010,전력 유틸리티
 2714,CNO PR A,CNO Financial Group 5 125 Subordinated Debentures,55301030,생명 및 건강 보험
 2715,ASPI,Aspire Real Estate Investors Inc,60101010,"부동산 임대, 개발 및 운영"
 2716,UZE,United States Cellular Corporation 5.500% Senior Notes due 2070,57401020,무선 통신 서비스
-2717,BWSN,Babcock And Wilcox Enterprises 8 125 Senior Notes due 2026,52102040,중전기장비
+2717,WRB PR H,W.R. Berkley 4.125% Subordinated Debentures due 2061,55301020,손해보험
 2718,RCC,Ready Capital 5.75% Senior Notes due 2026,60102040,특수 REITs
-2719,WRB PR H,W.R. Berkley 4.125% Subordinated Debentures due 2061,55301020,손해보험
+2719,BWSN,Babcock And Wilcox Enterprises 8 125 Senior Notes due 2026,52102040,중전기장비
 2720,UZF,United States Cellular 5 500 Senior Notes Due 2070,57401020,무선 통신 서비스
 2721,GL PR D,Globe Life 4 25 Junior Subordinated Debentures due 2061,55301030,생명 및 건강 보험
 2722,DTG,DTE Energy 2021 4 375 Junior Subordinated Debentures Series E,59101010,전력 유틸리티
